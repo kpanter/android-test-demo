@@ -10,6 +10,18 @@ buildscript {
 }
 
 apply plugin: "org.sonarqube"
+sonarqube {
+
+    properties  {
+
+        property "sonar.language", "java"
+
+        property "sonar.profile", "Android Lint"
+
+    }
+}
+
+
 
 apply plugin: 'com.android.application'
 
