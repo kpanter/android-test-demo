@@ -13,9 +13,11 @@ apply plugin: "org.sonarqube"
 sonarqube {
 
     properties  {
-
+        property "sonar.projectName", "AndroidCIBuild"
+        property "sonar.projectKey", "android_ci"
+        property "sonar.sources", "src/main/java"
         property "sonar.language", "java"
-
+        property "sonar.androidLint.reportPaths", "build/reports/lint-results.xml"
         property "sonar.profile", "Android Lint"
 
     }
