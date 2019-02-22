@@ -68,11 +68,7 @@ android {
         }
     }
 
-
-
-
-
-
+    
 packagingOptions {
     exclude 'LICENSE.txt'
   }
