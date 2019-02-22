@@ -16,7 +16,7 @@ sonarqube {
             property "sonar.profile", "Android Lint"
         property "sonar.sources", "./src/main"
       //  property "sonar.analysis.mode", "publish"
-      //  property "sonar.android.lint.report", "build/reports/lint-results.xml"
+        property "sonar.android.lint.report", "build/reports/lint-results.xml"
       property "sonar.projectName", "AndroidCIBuild"
       //  property "sonar.projectKey", "android_ci"
       //  property "sonar.sources", "src/main/java"
@@ -68,7 +68,7 @@ android {
         }
     }
 
-    
+
 packagingOptions {
     exclude 'LICENSE.txt'
   }
