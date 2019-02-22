@@ -74,3 +74,12 @@ dependencies {
   androidTestImplementation 'org.mockito:mockito-android:2.12.0'
   androidTestAnnotationProcessor "com.google.dagger:dagger-compiler:${DAGGER_VERSION}"
 }
+
+lintOptions {
+    // set to true to turn off analysis progress reporting by lint
+    quiet true
+    // if true, stop the gradle build if errors are found
+    abortOnError false
+    // do not ignore warnings
+    warningsAsErrors true
+}
