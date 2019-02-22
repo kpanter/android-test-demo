@@ -14,8 +14,9 @@ sonarqube {
 
     properties  {
             property "sonar.profile", "Android Lint"
-        property "sonar.sources", "./src/main"
-      //  property "sonar.analysis.mode", "publish"
+       // property "sonar.sources", "./src/main"
+        property "sonar.sources", "app/src"
+        //  property "sonar.analysis.mode", "publish"
         property "sonar.android.lint.report", "build/reports/lint-results.xml"
       property "sonar.projectName", "AndroidCIBuild"
       //  property "sonar.projectKey", "android_ci"
