@@ -17,11 +17,12 @@ sonarqube {
        // property "sonar.android.lint.report", "app/build/reports/lint-results.xml"
         property "sonar.projectName", "AndroidCIBuild"
        // property "sonar.projectKey", "android_ci"
-      //  property "sonar.sources", "src/main/java"
-      //  property "sonar.language", "java"
+        property "sonar.sources", "src/main/java"
+        property "sonar.sources", "app/src/main/java"
+        property "sonar.language", "java"
+  
        // property "sonar.androidLint.reportPaths", "app/build/reports/lint-results.xml"
       //  property "sonar.profile", "Android Lint"
-
     }
 }
 
@@ -41,6 +42,18 @@ android {
     versionName '1.0.0'
 
     testInstrumentationRunner 'com.sqisland.android.test_demo.MockTestRunner'
+  
+  
+  lintOptions {
+    // set to true to turn off analysis progress reporting by lint
+    quiet true
+    // if true, stop the gradle build if errors are found
+    abortOnError false
+    // do not ignore warnings
+    warningsAsErrors true
+}
+  
+  
   }
 
   buildTypes {
@@ -75,11 +88,4 @@ dependencies {
   androidTestAnnotationProcessor "com.google.dagger:dagger-compiler:${DAGGER_VERSION}"
 }
 
-lintOptions {
-    // set to true to turn off analysis progress reporting by lint
-    quiet true
-    // if true, stop the gradle build if errors are found
-    abortOnError false
-    // do not ignore warnings
-    warningsAsErrors true
-}
+
