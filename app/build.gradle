@@ -28,8 +28,6 @@ sonarqube {
     }
 }
 
-
-
 apply plugin: 'com.android.application'
 
 android {
@@ -50,7 +48,6 @@ android {
         warningsAsErrors true
          abortOnError false
     }
-  
   
   }
 
