@@ -17,11 +17,11 @@ sonarqube {
         property "sonar.android.lint.report", "build/reports/lint-results.xml"
         property "sonar.projectName", "AndroidCIBuild"
         property "sonar.projectKey", "android_ci"
-        property "sonar.sources", "src/main"
-    //    property "sonar.language", "java"
-        property "sonar.language", "xml"
+        property "sonar.sources", "src/main/java"
+        property "sonar.tests", src/test/java"
+        property "sonar.language", "java"
         property "sonar.sourceEncoding", "UTF-8"
-        property "sonar.profile", "Sonar way"
+        property "sonar.profile", "Android Lint"
         property "sonar.import_unknown_files", "true"
     }
 }
