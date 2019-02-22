@@ -66,8 +66,6 @@ android {
         noLines true
         // if true, show all locations for an error, do not truncate lists, etc.
         showAll true
-        // Fallback lint configuration (default severities, etc.)
-        lintConfig file("default-lint.xml")
         // if true, generate a text report of issues (false by default)
         textReport true
         // location to write the output; can be a file or 'stdout'
